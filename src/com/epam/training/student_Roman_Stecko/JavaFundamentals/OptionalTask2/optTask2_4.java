@@ -6,11 +6,11 @@ public class optTask2_4 {
    // Найти максимальный элемент в матрице и удалить из матрицы все строки и столбцы, его содержащие
    public static void main(String[] args) {
 
-       System.out.println("Enter array dimension ");
+       System.out.println("Enter matrix size (matrix n x n)");
        Scanner input = new Scanner(System.in);
        int n = input.nextInt();
-       System.out.println("Random array " + n + " x " + n);
-       System.out.println("Input Max value of a random number in the array");
+       System.out.println("Random matrix " + n + " x " + n);
+       System.out.println("Input Max value of a random number in the matrix");
        int maxValue = input.nextInt();
        System.out.println("Random numbers from " + -maxValue + " to " + maxValue);
 
@@ -23,7 +23,7 @@ public class optTask2_4 {
                massive[i][j] = (int) (Math.random() * (maxValue - (-maxValue) + 2 ) - maxValue - 1);
            }
        }
-       System.out.println("\nYour random array:");
+       System.out.println("\nYour random matrix:");
        int max = 0;
        int imax = 0;
        int jmax = 0;

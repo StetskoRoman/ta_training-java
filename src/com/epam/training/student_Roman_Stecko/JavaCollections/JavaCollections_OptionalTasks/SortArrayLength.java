@@ -15,7 +15,7 @@ public class SortArrayLength {
             }
             System.out.println("\n");
 
-            listPoem.sort(((o1, o2) -> o1.length() - o2.length()));  //сортирует по количеству букв в строке, игнорируя пробелы и знаки препинания
+            listPoem.sort(((o1, o2) -> o1.length() - o2.length()));
             for (String poemLinesCompare : listPoem) {
                 System.out.println(poemLinesCompare);
             }

@@ -2,9 +2,9 @@ package com.epam.training.student_Roman_Stecko.JavaFundamentals.MainTask;
 
 import java.util.Scanner;
 
-public class fourthProgram {
+public class SumAndMultyply {
     public static void main(String[] args) {
-        System.out.println("Enter a number of elements in massive ");
+        System.out.println("Enter number of elements in massive (only integer) ");
         Scanner nElements = new Scanner(System.in);
         int n = nElements.nextInt();
         int a;

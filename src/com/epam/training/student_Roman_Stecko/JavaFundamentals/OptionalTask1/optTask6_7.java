@@ -7,7 +7,7 @@ public class optTask6_7 {
         System.out.println("Enter n of numbers");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        int numbers[] = new int[n];
+        int [] numbers = new int[n];
         System.out.println("Now enter your numbers");
         for (int i = 0; i < n; i++) {
             numbers[i] = input.nextInt();
@@ -59,7 +59,6 @@ public class optTask6_7 {
                     return;
                 }
             }
-
         }
         System.out.println("\nThere are no numbers with increasing digits only");
     }

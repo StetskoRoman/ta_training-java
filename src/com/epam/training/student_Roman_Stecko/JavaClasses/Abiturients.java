@@ -1,5 +1,7 @@
 package com.epam.training.student_Roman_Stecko.JavaClasses;
 
+import java.util.Arrays;
+
 public class Abiturients {
 
     private long id;
@@ -85,15 +87,31 @@ public class Abiturients {
         return numbers;
     }
 
+    @Override
+    public String toString() {
+        return  "\nStudent {" +
+                "id=" + id +
+                ", surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", addres='" + addres + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", estimation=" + Arrays.toString(estimation) +
+                "}" ;
+    }
+
     public void printInfo(){
         System.out.println(id + ",  " + surname + " " + name + " " + patronymic + ":  " + addres + ",  " + phoneNumber + ". Estimations: " + printArray(estimation));
     }
-    public double avg (int[] estimation){
+    public double averageMarks(int[] estimation){
         int result = 0;
         for (int num: estimation){
             result += num;
         }
         return (double)result/(double)estimation.length;
     }
+
+
+
 
 }

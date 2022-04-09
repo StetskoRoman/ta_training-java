@@ -6,15 +6,15 @@ public class optTask2_1 {
     //Упорядочивание столбца матрицы в порядке возрастания значений элементов k-й строки
     public static void main(String[] args) {
 
-        System.out.println("Enter array dimension ");
+        System.out.println("Enter matrix size (matrix n x n) ");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        System.out.println("Random array " + n + " x " + n);
-        System.out.println("Input Max value of a random number in the array");
+        System.out.println("Random matrix " + n + " x " + n);
+        System.out.println("Input Max value of a random number in the matrix");
         int maxValue = input.nextInt();
         System.out.println("Random numbers from " + -maxValue + " to " + maxValue);
 
-        int[][] massive = new int[n][n];  //объявление двумерного массива
+        int[][] massive = new int[n][n];
         for (int i = 0; i < massive.length; i++) {
             massive[i] = new int[n];
         }
@@ -24,7 +24,7 @@ public class optTask2_1 {
                 massive[i][j] = (int) (Math.random() * (maxValue - (-maxValue) + 2 ) - maxValue - 1);
             }
         }
-        System.out.println("\nYour random array:");
+        System.out.println("\nYour random matrix:");
         for (int i = 0; i < massive.length; i++) {
             System.out.println(" ");
             for (int j = 0; j < massive.length; j++) {
