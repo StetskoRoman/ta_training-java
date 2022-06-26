@@ -2,7 +2,7 @@ package com.epam.training.student_Roman_Stecko.JavaFundamentals.OptionalTask1;
 
 import java.util.Scanner;
 
-public class optTask6_7 {
+public class OptTask6_7 {
     public static void main(String[] args) {
         System.out.println("Enter n of numbers");
         Scanner input = new Scanner(System.in);

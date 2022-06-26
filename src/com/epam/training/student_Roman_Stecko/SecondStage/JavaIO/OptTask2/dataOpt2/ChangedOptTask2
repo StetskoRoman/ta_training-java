@@ -1,0 +1,117 @@
+package com.epam.training.student_Roman_Stecko.JavaClasses;
+
+import java.util.Arrays;
+
+private class Abiturients {
+
+    private long id;
+    private String surname;
+    private String name;
+    private String patronymic;
+    private String addres;
+    private String phoneNumber;
+    private int[] estimation;
+
+    private long getId() {
+        return id;
+    }
+
+    private String getSurname() {
+        return surname;
+    }
+
+    private String getName() {
+        return name;
+    }
+
+    private String getPatronymic() {
+        return patronymic;
+    }
+
+    private String getAddres() {
+        return addres;
+    }
+
+    private String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    private void setId(long id) {
+        this.id = id;
+    }
+
+    private void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    private void setName(String name) {
+        this.name = name;
+    }
+
+    private void setPatronymic(String patronymic) {
+        this.patronymic = patronymic;
+    }
+
+    private void setAddres(String addres) {
+        this.addres = addres;
+    }
+
+    private void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    private int[] getEstimation() {
+        return estimation;
+    }
+
+    private void setEstimation(int[] estimation) {
+        this.estimation = estimation;
+    }
+
+    private Abiturients(long id, String surname, String name, String patronymic, String addres, String phoneNumber, int[] estimation) {
+        this.id = id;
+        this.surname = surname;
+        this.name = name;
+        this.patronymic = patronymic;
+        this.addres = addres;
+        this.phoneNumber = phoneNumber;
+        this.estimation = estimation;
+    }
+
+
+    private String printArray (int[] estimation) {
+        String numbers = "";
+        for (int num: estimation){
+            numbers += num + "  ";
+        }
+        return numbers;
+    }
+
+    @Override
+    private String toString() {
+        return  "\nStudent {" +
+                "id=" + id +
+                ", surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", addres='" + addres + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", estimation=" + Arrays.toString(estimation) +
+                "}" ;
+    }
+
+    private void printInfo(){
+        System.out.println(id + ",  " + surname + " " + name + " " + patronymic + ":  " + addres + ",  " + phoneNumber + ". Estimations: " + printArray(estimation));
+    }
+    private double averageMarks(int[] estimation){
+        int result = 0;
+        for (int num: estimation){
+            result += num;
+        }
+        return (double)result/(double)estimation.length;
+    }
+
+
+
+
+}

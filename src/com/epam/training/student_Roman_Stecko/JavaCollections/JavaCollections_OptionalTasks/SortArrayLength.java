@@ -9,7 +9,7 @@ public class SortArrayLength {
 
     public static void main(String[] args)  throws Exception {
         try {
-            ArrayList<String> listPoem = new ArrayList<>(Files.readAllLines(Paths.get("poem.txt")));
+            ArrayList<String> listPoem = new ArrayList<>(Files.readAllLines(Paths.get("src/com/epam/training/student_Roman_Stecko/JavaCollections/JavaCollections_OptionalTasks/poem.txt")));
             for (String poemLines : listPoem) {
                 System.out.println(poemLines);
             }

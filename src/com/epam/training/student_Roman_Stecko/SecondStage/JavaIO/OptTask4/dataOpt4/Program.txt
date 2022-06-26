@@ -9,14 +9,14 @@ class ReadTextFileAndChange {
     //Opt tasks 1
     public static void main(String[] args) throws Exception {
 
-        Scanner scanner = new Scanner(new File("src/com/epam/training/student_Roman_Stecko/JavaCollections/JavaCollections_OptionalTasks/poem.txt"));
+        Scanner scanner = new Scanner(new File("poem.txt"));
         Stack<String> stringsPoem = new Stack<>();
         while (scanner.hasNextLine()) {
             stringsPoem.push(scanner.nextLine());
         }
         scanner.close();
 
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("src/com/epam/training/student_Roman_Stecko/JavaCollections/JavaCollections_OptionalTasks/poemReverse.txt")))
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("poemReverse.txt")))
         {
 
             while (!stringsPoem.empty()) {

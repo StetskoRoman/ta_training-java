@@ -2,7 +2,7 @@ package com.epam.training.student_Roman_Stecko.JavaFundamentals.OptionalTask2;
 
 import java.util.Scanner;
 
-public class optTask2_4 {
+public class OptTask2_4 {
    // Найти максимальный элемент в матрице и удалить из матрицы все строки и столбцы, его содержащие
    public static void main(String[] args) {
 
