@@ -26,6 +26,7 @@ public class IORunner {
         File test = new File(mainPathFiles);
         File testWithFile = new File(resultPathFile);
         mainWorkMethod(test);
+        System.out.println("File with tree created");
         mainWorkMethod(testWithFile);
 
     }
